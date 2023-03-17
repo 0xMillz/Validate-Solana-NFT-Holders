@@ -101,7 +101,7 @@ const connection = new Connection("https://api.mainnet-beta.solana.com");
         //console.log(tokenmeta);
        // console.log(tokenmeta.data.data["name"])
        // nftsInWallet.push({name: tokenmeta.data.data["name"], uri: tokenmeta.data.data["uri"]})
-        //console.log("nfts: "+nftsInWallet)
+        // console.log("nfts: "+nftsInWallet)
        tokensInWallet[numberI].name = tokenmeta.data.data["name"]
        tokensInWallet[numberI].uri = tokenmeta.data.data["uri"]
        console.log("uri"+tokenmeta.data.data["uri"])
