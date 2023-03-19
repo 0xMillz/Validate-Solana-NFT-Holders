@@ -159,12 +159,6 @@ let validNftsArray = JSON.parse(JSON.stringify(validNftsA));
         let nfts_total_element = <span>({nftsThatAreValid.length})</span>;
  
         ReactDOM.render(nfts_total_element, document.getElementById("validTotalNFTs"))
-    
-
-              
-
-    
-      
     }
 
     const onClick = useCallback( async () => {
@@ -177,7 +171,7 @@ let validNftsArray = JSON.parse(JSON.stringify(validNftsA));
 
       console.log(publicKey.toBase58());
       //getTheTokensOfOwner(publicKey.toBase58());
-      getIfValidNfts()
+      void getIfValidNfts()
 
   }, [publicKey, sendTransaction, connection]);
 
@@ -207,7 +201,7 @@ document.body.removeChild(a);
      <br></br>  <h1>NFTs in wallet <span >{nftsInWallet}</span></h1>
   
 
-     <h1>Serpent Academy Valid NFTs <span id='validTotalNFTs'></span></h1>
+     <h1>Valid NFTs <span id='validTotalNFTs'></span></h1>
 
 <button onClick={downloadFile}  disabled={!statusHolder} >Get Book</button>
    </div>
