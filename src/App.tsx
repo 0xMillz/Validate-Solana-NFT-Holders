@@ -30,6 +30,7 @@ import {TOKEN_PROGRAM_ID} from '@solana/spl-token';
 require('./App.css');
 require('@solana/wallet-adapter-react-ui/styles.css');
 
+window.Buffer = window.Buffer || require("buffer").Buffer;
 let tokensInWallet:any[] = []
 let validTokensInWallet: string[] = []
 
